@@ -12,7 +12,6 @@ router.get('/', async (req, res) => {
 
         const fullHistory = await History.find();
         if (!fullHistory) throw Error('No History');
-        console.log("history:", fullHistory)
 
         res.status(200).json(fullHistory);
     } catch (e) {
@@ -29,6 +28,8 @@ router.post('/', async (req, res) => {
     console.log("REQ BODY IS", req.body)
     const newHistory = new History({
         name: req.body.name,
+        timeMode: req.body.timeMode,
+        period: req.body.period,
         pair: req.body.pair,
         spread: req.body.spread,
         mode: req.body.mode,
@@ -36,6 +37,7 @@ router.post('/', async (req, res) => {
     });
     try {
         const addedHis = await newHistory.save();
+        console.log("data added", addedHis)
         if (!addedHis) throw Error('Something went wrong saving the item');
         res.status(200).json(addedHis);
     } catch (e) {

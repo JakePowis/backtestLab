@@ -5,11 +5,19 @@ const model = require('mongoose').model;
 const HistorySchema = new Schema({
     name: {
         type: String,
-        // required: true
+        required: true
+    },
+    timeMode: {
+        type: String,
+        required: true
+    },
+    period: {
+        type: String,
+        required: true
     },
     pair: {
         type: String,
-        // required: true
+        required: true
     },
     spread: {
         type: Number,
@@ -21,9 +29,9 @@ const HistorySchema = new Schema({
     },
     data: {
         type: Object,
-        // required: true
+        required: true
     },
-    date: {
+    timestamp: {
         type: Date,
         default: Date.now
     }
