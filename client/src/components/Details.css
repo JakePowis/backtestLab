@@ -1,0 +1,29 @@
+.results {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: smaller;
+    max-height: 30px;
+
+}
+
+.headings {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: smaller;
+    max-height: 30px;
+
+}
+
+.results div, .headings div {
+
+    min-width: 70px;
+    max-height: 30px;
+    border: solid 1px black;
+    
+}

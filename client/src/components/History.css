@@ -1,0 +1,19 @@
+.resultsContainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultItem {
+
+padding-right: 1%;
+}
+
+.moreInfo {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

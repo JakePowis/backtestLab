@@ -1,0 +1,54 @@
+.resultsForm {
+    width: 60%;
+    margin: auto;
+}
+
+.resultsBox {
+   height: 200px !important;
+   overflow: auto;
+
+
+}
+
+.nameSection {
+
+    display: flex;
+    width: 100% !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.name {
+
+    width: 60% !important;
+}
+
+.nameBtn {
+    width: 10%;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.dateSection {
+
+    border: solid 1px slategray;
+    border-radius: 4px;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+.optionSection {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.addPopup {
+
+    display: flex !important;
+    flex-direction: column !important;
+}
+

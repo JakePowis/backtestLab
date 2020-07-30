@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.grad {
+  box-shadow: 1px 4px 20px #88888842;
+
+}
+
+.top {
+  min-width: 120px;
+  text-align: right;
+    color: slategray;
+}
+
+.Lab {
+  color: black;
+}
+
+.Lab:hover {
+  color: lightgray;
+}
+
+.hov {
+
+}
+
+.hov:hover {
+  color: lightgray !important;
+}
+
+.line {
+  margin:auto;
+}
+
+a {
+  color: slategray 
+}
+
+a:hover {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.boxContainer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  height: 10vh;
+}
+
+.box {
+  border: solid 2px darkslategray;
+  border-radius: 6px;
+  background-color: dimgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vw;
+  width: 14vw;
+  font-size: 0.9em;
+}
+
+.box:hover {
+
+  background-color: gray;
+
+
+}
+
+.boxBtn {
+
+  color: lightgray;
+  font-size: 0.9em;
+
+}
+
+.active {
+
+  font-weight: 800;
+}
+
